@@ -1,0 +1,90 @@
+/* Basic reset for body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  background-color: #343a40; /* Dark background for a modern look */
+  color: #ffffff; /* White text color for contrast */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px; /* Padding for spacing */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.heading {
+  font-size: 26px; /* Slightly larger font size */
+  margin-left: 10px;
+  color: #f8f9fa; /* Light gray color */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Use gap for spacing between items */
+}
+
+.navbar li {
+  font-size: 18px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff; /* White text color */
+  padding: 8px 12px; /* Padding for clickable area */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.navbar a:hover {
+  color: #343a40; /* Dark background color */
+  background-color: #f8f9fa; /* Light gray hover background */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .heading {
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px; /* Use gap for spacing between items */
+  }
+
+  .navbar li {
+    margin: 0; /* Reset margin */
+    font-size: 20px;
+  }
+}
+
+/* Additional styling for better appearance */
+.header {
+  background: linear-gradient(90deg, #3f51b5, #1a237e); /* Gradient background for modern look */
+}
+
+.navbar a {
+  font-weight: 500;
+  letter-spacing: 0.5px; /* Slightly more spacing between letters */
+}
+
+.navbar a.active {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.navbar a:hover {
+  color: #1a237e; /* Change to a blue color on hover */
+  background-color: #e0e0e0; /* Light gray hover background */
+}
